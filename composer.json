@@ -1,0 +1,38 @@
+{
+    "name": "faganchalabizada/millikart-epos-laravel",
+    "description": "MilliKart EPOS.AZ Checkout for laravel",
+    "homepage": "https://www.facebook.com/FeqanCelebizade",
+    "keywords": ["millikart", "bankofbaku", "checkout", "laravel", "epos.az"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Fagan Chalabizada",
+            "email": "feqan@celebizade.info"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FaganChalabizada\\EPOS\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "faganchalabizada/wallet-laravel": "1.*",
+        "php-curl-class/php-curl-class": "8.3.*",
+        "php": ">=5.5.9",
+        "faganchalabizada/millikart-epos-laravel": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FaganChalabizada\\EPOS\\EPOSServiceProvider"
+            ],
+
+            "aliases": {
+                "EPOS": "FaganChalabizada\\EPOS\\Facade\\EPOS"
+            }
+        }
+    }
+}
