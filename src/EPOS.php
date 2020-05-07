@@ -69,7 +69,6 @@ class EPOS
             'currency' => $currency,
         ];
 
-        print_r($params);
         $control_sum = $this->getControlSum($params);
 
         $params['sum'] = $control_sum;
